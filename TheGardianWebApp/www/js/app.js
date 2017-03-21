@@ -21,6 +21,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
         }
       })
+      .state('root.connexion' , {
+        url : '/connexion',
+        views : {
+          contentView : {
+            templateUrl : 'templates/connexion.html',
+            controller : 'ConnexionController'
+          }
+        }
+      })
       .state('root.patients' , {
         url : '/patients',
         views : {
@@ -47,4 +56,3 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 })
-

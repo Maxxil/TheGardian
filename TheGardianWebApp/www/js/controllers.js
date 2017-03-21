@@ -5,6 +5,10 @@ angular.module('starter.controllers', [])
       console.log("Inscription")
   })
 
+  .controller('ConnexionController' , function($scope){
+      console.log("Connexion")
+  })
+
   .controller('ListPatients' , function($scope){
     console.log('Liste patients');
   })
