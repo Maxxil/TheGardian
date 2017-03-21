@@ -4,8 +4,11 @@ angular.module('starter.controllers', [])
   .controller('InscriptionController' , function($scope){
       console.log("Inscription")
   })
+  .controller('ConnexionController' , function($scope){
+      console.log("Connexion")
+  })
 
-  .controller('ListPatientsController' , function($scope ){
+  .controller('ListPatientsController' , function($scope){
     console.log('Liste patients');
     $scope.patients = [];
 
