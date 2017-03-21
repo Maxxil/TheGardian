@@ -26,7 +26,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views : {
           contentView : {
             templateUrl : 'templates/patients.html',
-            controller : 'ListPatients'
+            controller : 'ListPatientsController'
+          }
+        }
+      })
+      .state('root.patient',{
+        url : '/patient/:id',
+        views : {
+          contentView : {
+            templateUrl : 'templates/patient.html',
+            controller : 'PatientController'
+          }
+        }
+    })
+      .state('root.inscriptionPatient' , {
+        url : '/inscriptionPatient',
+        views : {
+          contentView : {
+            templateUrl : 'templates/inscriptionPatient.html',
+            controller : 'InscriptionPatientController'
           }
         }
       });

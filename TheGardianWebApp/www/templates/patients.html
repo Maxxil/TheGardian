@@ -1,1 +1,23 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-calm">
+    <ion-nav-back-button class="">
+      <i class="ion-arrow-left-c"></i> Back
+    </ion-nav-back-button>
+    <ion-nav-title>Liste des patients</ion-nav-title>
+  </ion-nav-bar>
+  <ion-content>
+    <label class="item item-input" >
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" placeholder="Search" ng-model="searchText">
+    </label>
+    <div class="list list-inset">
 
+      <div ng-repeat="patient in patients | filter:searchText">
+        <a class="item" ng-href="#/root/patient/{{patient.id}}">
+          <h3>{{patient.nom}}</h3>
+          <h4>{{patient.prenom}}</h4>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
